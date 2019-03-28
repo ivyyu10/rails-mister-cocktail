@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>🍸🍸 Les Fawncy Cocktails 🍸🍸</h1>
+  <h3>~~oooOOOoooOOOoooo~~</h3>
+</div>
+<div class="row">
+  <% @cocktails.each do |cocktail| %>
+    <div class="col-4">
+      <div class="card">
+        <%= image_tag cocktail.image, class:"image" %>
+        <h3><%= cocktail.name %></h3>
+        <p><%= link_to "Omg, let's make it! ~~ 💁🏻‍♀️", cocktail_path(cocktail), class:"link" %></p>
+        <%= link_to cocktail_path(cocktail), method: :delete, data: { confirm: "Are you sure you want to delete this cocktail?" } do %><i class="fas fa-trash-alt"></i>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>
+<%= link_to "Add a new cocktail", new_cocktail_path(@cocktail), class:'btn btn-warning' %>
