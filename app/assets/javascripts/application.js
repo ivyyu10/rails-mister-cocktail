@@ -14,3 +14,7 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+var typed = new Typed('.banner, h1', {
+  strings: ["Welcome to Le Fawncy Cocktails"],
+  typeSpeed: 30
+});

@@ -4,7 +4,7 @@
   <%= simple_form_for(@cocktail) do |f| %>
     <%= f.input :name %>
     <%= f.input :image %>
-    <%= f.button :submit, class:"btn btn-primary"%>
-    <h2>🍸🍹🍸🍹🍸🍹🍸🍹🍸🍹🍸🍹🍸🍹🍸🍹🍸🍹🍸🍹🍸</h2>
+    <%= f.button :submit, class:"btn btn-warning"%>
+    <p><%= link_to "Nvm, take me back", cocktails_path %></p>
   <% end %>
 </div>

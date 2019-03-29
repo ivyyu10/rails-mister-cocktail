@@ -1,8 +1,12 @@
-<div class="card">
-  <%= image_tag @cocktail.image, class:"image" %>
-  <h3><%= @cocktail.name %></h3>
-  <% @cocktail.doses.each do |dose| %>
-    <div class="description-card">
+<div class="card-show">
+  <!-- image of drink -->
+  <div class="img">
+    <%= image_tag @cocktail.image, class:"image" %>
+  </div>
+  <!-- name and info -->
+  <div class="description-card">
+    <h3><%= @cocktail.name %></h3>
+    <% @cocktail.doses.each do |dose| %>
       <%= dose.ingredient.name%> -- <%= dose.description %>
       <%= link_to dose_path(dose), method: :delete do %>
         <i class="fa fa-trash-alt"></i>
@@ -10,5 +14,6 @@
     <% end %>
   </div>
 </div>
-<%= link_to "Add Ingredients", new_cocktail_dose_path(@cocktail), class:"btn btn-warning" %>
+<!-- action buttons and links -->
+<p><%= link_to "Add Ingredients", new_cocktail_dose_path(@cocktail), class:"btn-add" %></p>
 <p><%= link_to "Back to Cocktails List", cocktails_path, class:"link-back" %></p>

@@ -4,19 +4,22 @@
   color: white;
   margin: 0 auto;
   margin-top: 50px;
-  border: 1px solid #ECB22F;
+  border: 1px solid lightgrey;
   padding: 60px;
   h2 {
     color: #E01E5A;
+    font-family: 'Diplomata SC', cursive;
+    font-size: 30px;
+    text-align: center;
   }
-
 }
 
 .description-card {
   color: white
 }
 
-.btn-primary {
+.btn-warning {
   margin-top: 40px;
   margin-bottom: 60px;
+  border-radius: 20px;
 }
