@@ -18,3 +18,8 @@
 console.log('Hello World from Webpacker')
 
 import 'bootstrap';
+
+// var typed = new Typed('.banner, h1', {
+//   strings: ["Welcome to Le Fawncy Cocktails"],
+//   typeSpeed: 30
+// });
