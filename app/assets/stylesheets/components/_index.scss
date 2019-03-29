@@ -14,14 +14,13 @@ h3 {
   }
 }
 
-
 .card {
   display: grid;
   justify-content: space-around;
   width: 450px;
   height: auto;
   background-color: #548C8C;
-  border: 4px solid #548C8C;
+  border: 6px solid #548C8C;
   align: center;
   margin: 20px;
   margin-left: 50px;
@@ -43,19 +42,19 @@ h3 {
 }
 
 .link {
-  color: white;
-  margin-left: 20px;
-  background-color: #E01E5A;
-  border: 1px solid black;
+  color: #ECB22F;
+  margin-left: 30px;
+  background-color: black;
+  border: 1px solid #E01E5A;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   a {
   margin-bottom: 0;
 }
 }
 
 .fa-trash-alt {
-  color: white;
+  color: black;
   margin-left: 400px;
   margin-bottom: 30px;
 }
@@ -80,6 +79,7 @@ h1 {
   padding: 40px;
   text-weight: bold;
   padding-bottom: 0;
-  font-family: 'Diplomata SC', cursive;
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
 }
 

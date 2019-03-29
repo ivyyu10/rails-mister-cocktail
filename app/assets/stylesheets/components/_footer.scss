@@ -1,5 +1,5 @@
 .footer {
-  background: #E01E5A;
+  background: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,7 +13,7 @@
   align-items: center;
 }
 .footer-links a {
-  color: black;
+  color: #E01E5A;
   opacity: 1;
   text-decoration: none;
   font-size: 24px;
@@ -23,11 +23,11 @@
   opacity: 0.7;
 }
 .footer .fa-heart {
-  color: black;
+  color: #E01E5A;
 }
 
 .footer-copyright {
   color: white;
-  font-family: 'Tangerine', cursive;
-  font-size: 30px;
+  font-family: 'Marck Script', cursive;
+  font-size: 20px;
 }
