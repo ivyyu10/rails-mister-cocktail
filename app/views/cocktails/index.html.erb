@@ -1,6 +1,22 @@
-<div class="container">
-  <h1>🍸🕺 Les Fawncy Cocktails 🕺🏻🍸</h1>
+<!-- navbar for homepage -->
+<div class="navbar navbar-expand-sm navbar-light navbar-cocktail">
+  <%= link_to "#", class: "navbar-brand" do %>
+    <%= image_tag "https://www.icon.com.mt/wp-content/uploads/2014/11/Unwind-icon.png" %>
+  <% end %>
+  <!-- -->
 </div>
+<!-- banner for homepage -->
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(http://4.bp.blogspot.com/-8dQ08sNbfIo/UaFvfTT4nYI/AAAAAAAAX7M/8CSyxFPIoik/s1600/Leonardo-Dicaprio-The-Great-Gatsby-2013-Sharped-Dressed-Man.png);">
+  <div class="container-small">
+    <h1>Welcome to <strong>Le Fawncy Cocktail</strong></h1>
+    <p>Your one stop shop for impressing those fancy guests with the fanciest cocktails ever created</p>
+  </div>
+</div>
+<!-- list of cocktails -->
+<div class="container">
+  <h1>🍸🕺 Our Cocktails 🕺🏻🍸</h1>
+</div>
+<%= link_to "Add a new cocktail", new_cocktail_path(@cocktail), class:'btn btn-white' %>
 <div class="row">
   <% @cocktails.each do |cocktail| %>
     <div class="col-4">
@@ -14,4 +30,16 @@
     </div>
   <% end %>
 </div>
-<%= link_to "Add a new cocktail", new_cocktail_path(@cocktail), class:'btn btn-warning' %>
+<!-- footer -->
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    Follow us to keep up with all our new fancy cocktails <i class="fas fa-heart"></i>
+  </div>
+</div>

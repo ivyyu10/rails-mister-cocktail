@@ -1,13 +1,16 @@
 .description-card {
   color: white;
   margin-left: 10px;
+  p {
+    margin-left: 0;
+  }
 }
 
 .btn-warning {
-  margin-left: 50px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .link-back {
-  margin-left: 50px;
+  margin-left: 10px;
 }
